@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="orange.com.webviewdemo.MainActivity">
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:text="这是Button"
+            android:layout_x="170dp"
+            android:layout_y="100dp"
+            android:onClick="onClick"
+            android:background="@color/colorPrimary"
+            android:id="@+id/button_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </WebView>
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+</RelativeLayout>
